@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* background: url("/Zero To Hero/pat1.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.header {
+    background-color: rgba(239, 10, 10,1);
+}
+
+.header__h1{
+    color: rgb(7, 27, 206);
+    display: contents;
+}
+
+.header__h1:hover {
+    color: rgb(0, 255, 17);
+}
+
+.para-text {
+    margin-left: 2rem;
+    margin-top : 1rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrap {
+    white-space: nowrap;
+}
+
+.subtitle {
+    color: rgb(206, 146, 7);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+img[src*="scenic"], img[src*="map"]{    /* speicifc atrribute selector */
+    border: 2px solid #fff;
+    margin-left:2rem ; 
+    float: right;
+    margin-right: 2rem;
+}
+
+#service-image {
+    height: 400px;
+    width: 70%;
+
+    background: linear-gradient(to bottom right/* diagonal */,rgb(94, 255, 126), rgba(94, 255, 126, 0));
+    background-size: cover;
+}
+
+#service-image1 {
+    height: 400px;
+    width: 70vw; /* 1vw or 1vh = 1% width or 1% height */
+
+    background: linear-gradient(215deg/* use of angles at 360 deg */,rgb(94, 255, 126), rgba(94, 255, 126, 0));
+    background-size: cover;
+}
+
+#service-image2 {
+    height: 400px;
+    width: 70%;
+
+    background: radial-gradient(circle /* or default shape elipse */, red 20%, blue 40%, green 55%);
+}
+
+.offscreen {
+    color: cornflowerblue;
+    margin-left: 2rem;
+}
+
+.list-item {
+    padding-left: 3rem;
+    display: grid ;
+    color: steelblue;
+}
+.list-item:nth-child(2) { /* Every li inside of ul indicated by > */
+    color: steelblue;
+}
+
+.link:any-link {
+    margin-left: 2rem;
+    text-decoration: none;
+    color:#e5efe7fe;
+}
+.link:visited {
+    color: #0000ff;
+}
+.link:hover {
+    color: #008000;
+}
+.link:active {
+    color: #ffd700;
+}
+
+textarea ~button { /* styles button that comes immediately after textarea in html this is shown by ~ */
+    display: inline-block;
+    color: #800080;
+}
+
+textarea[id = textarea]{    /* attribute selector element[attr = value] */
+   display: block;
+    border-radius: 10%;
+}
+
+table {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000;
+}
+
+.table-data {
+    color: steelblue;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+}
+
+.container-item {
+    background-color: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
+}
+
+.grid-container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap: 150px; */
+
+    grid-template-rows: auto auto;
+    /* grid-row-gap: 300px; */
+    /* grid-gap: 300px 150px;  A simplified grid-row-gap and grid-column-gap */
+    /* justify-content: space-between;  start end or space-around or space-evenly
+    align-content: end; */
+}
+
+.grid-item {
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+

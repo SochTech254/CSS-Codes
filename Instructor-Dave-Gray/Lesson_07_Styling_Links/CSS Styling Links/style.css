@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    color: dodgerblue;
+    background: gold;
+} 
+
+a:active {
+    color: red;
+}

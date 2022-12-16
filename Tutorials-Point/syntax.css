@@ -1,0 +1,75 @@
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+.paragraph {
+    background-color: papayawhip;
+    align-content: center;
+    padding-left: 3%;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    text-transform: initial;
+    color: #000;
+    background : url(/scenic-2200x1331.png) repeat 100% fixed;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-stretch: normal;
+    direction: ltr;
+    letter-spacing: 2px;
+    word-spacing: 0.1rem;
+    text-indent: 5rem;
+    text-align: left;
+    text-shadow: 4px 4px 8px blue;
+}
+
+.p1 {
+    width: 95%;
+    height: auto;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    text-indent: 3rem;
+}
+
+.ul  {
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-end;
+    padding: 0.25em 5%;
+    gap: 2rem;
+}
+
+.nav .ul li a:link {color: blue;}
+.nav .ul li a:visited {color: red;}
+.nav .ul li a:hover {color: green; cursor: pointer;}
+.nav .ul li a:active {color: orange;}
+
+img {
+    display: block;
+    border: 5px solid red;
+    height: 100vh;
+    width: 100%;
+    margin-left: auto;
+}
+
+table.one {
+    border-collapse: separate;
+    width: 400px;
+    border-spacing: 10px;
+}
+
+table.two {
+    border-collapse: separate;
+    width: 400px;
+    border-spacing: 10px 50px;
+}
